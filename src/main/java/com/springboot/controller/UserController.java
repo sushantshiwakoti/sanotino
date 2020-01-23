@@ -29,6 +29,10 @@ public class UserController {
 		return userService.createUser(user,officeId);
 		
 	}
+	@GetMapping("/{id}")
+	public User updateUser(@PathVariable("id")Long id,@RequestBody User user) {
+		return userService.updateUser(id,user);
+	}
 //	@GetMapping("/{officeId}")
 //	public List<User> findUserByOfficeId(@PathVariable("officeId")Long officeId) {
 //		return userService.findUserByOfficeId(officeId);
