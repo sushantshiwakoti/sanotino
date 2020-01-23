@@ -24,9 +24,9 @@ public class UserController {
 		return  userService.findAllUsers();
 		
 	}
-	@PostMapping("/createUser")
-	public User createUSer(@RequestBody User user) {
-		return userService.createUser(user);
+	@PostMapping("/createUser/{officeId}")
+	public User createUSer(@RequestBody User user,@PathVariable("officeId")Long officeId) {
+		return userService.createUser(user,officeId);
 		
 	}
 //	@GetMapping("/{officeId}")

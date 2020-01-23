@@ -1,14 +1,8 @@
 package com.springboot.repository;
 
-import java.util.List;
-
-import javax.persistence.EntityManager;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import com.querydsl.jpa.impl.JPAQuery;
-import com.springboot.model.QUser;
 import com.springboot.model.User;
 
 @Repository
